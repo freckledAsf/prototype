@@ -1,0 +1,109 @@
+.header > * {
+    font-size: 16px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    background-color: var(--header-bgcolor); 
+}
+
+.banner {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-color);
+}
+
+.inner_banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner_banner * {
+    color: var(--primary-color);
+}
+
+.navbar {
+    margin-top: 8px;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner_navbar .left {
+    display: flex;
+    gap: 25px;
+}
+
+.inner_navbar .left * {
+    font-weight: 500;
+}
+
+/*IF CHANGE DISPLAY TO FLEX, BUTTON SIZE F'D UP, RESSOLVE*/
+
+
+.inner_navbar .right * {
+    margin-left: 10px;
+}
+
+.main {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_main {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 1em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    justify-content: center;
+    background-color: var(--accent-color);
+    border-top: 1px solid var(--outline-color);
+    border-bottom: 1px solid var(--outline-color);
+}
+
+.footer_grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer_grid * {
+    font-size: 14px;
+}
+
+.footer_title {
+    font-weight: 500;
+}
+
+.footer_copyright p {
+    font-size: 12px;
+}

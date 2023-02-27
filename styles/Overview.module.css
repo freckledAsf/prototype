@@ -1,0 +1,33 @@
+.results {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profile * {
+    margin: 0;
+}
+
+.profile > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+.profile > div:first-child {
+    flex-direction: row;
+}
+
+.profile span {
+    font-weight: 500;
+    color: var(--secondary-color);
+}

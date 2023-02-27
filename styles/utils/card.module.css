@@ -1,0 +1,21 @@
+.card {
+    padding: 1.5em;
+    text-align: left;
+    border: 1px solid var(--outline-color);
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+    color: var(--link-color);
+    border-color: var(--link-color);
+}
+
+.card p {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.card:hover p {
+    color: var(--link-color);
+}

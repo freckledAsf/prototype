@@ -1,0 +1,25 @@
+.buttons {
+    display: flex;
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons * {
+    flex-basis: 220px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

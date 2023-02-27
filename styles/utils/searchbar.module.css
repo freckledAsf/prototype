@@ -1,0 +1,75 @@
+.search_container {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+}
+
+.search_bar {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.input_bar {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    border: 1px solid var(--outline-color);
+    border-left: none;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    font-size: 14px;
+    padding: 0.4em 0.3em;
+    outline: none;
+    transition: border-color .15s ease;
+    text-indent: 1px;
+}
+
+.input_bar::placeholder {
+    color: var(--placeholder-color);
+}
+
+.input_bar:focus, .input_bar:focus + span {
+    border-color: var(--secondary-color);
+}
+
+.input span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 8px;
+    border: 1px solid var(--outline-color);
+    border-right: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    color: var(--tertiary-color);
+    transition: border-color .15s ease, color .15s ease;
+}
+
+.search_container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+    border: 0;
+    gap: 5px;
+    padding: 8px 12px;
+    min-width: max-content;
+}
+
+.search_container a span {
+    font-size: 14px;
+}
+
+.search_container a svg {
+    font-size: 14px;
+    position: relative;
+    top: 4px;
+}
